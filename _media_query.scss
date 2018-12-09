@@ -1,0 +1,304 @@
+@media screen and (max-width: 1800px){
+    .legend{
+        .legend_content{
+            width: 300px;
+            .l_write{
+                &:nth-child(2){
+                    font-size: 1.4em;
+                }
+                
+            }
+        }
+    }
+}
+@media screen and (max-width: 1400px) {
+    .legend {
+        .legend_content {
+            height: auto;
+            width: 250px;
+            margin-left: 3em;
+
+            .l_write {
+                &:nth-child(2) {
+                    font-size: 1em;
+                }
+                &:nth-child(3) {
+                    margin-top: 0;
+                    font-size: .8em;
+                    width: 150px;
+                }
+            }
+        }
+    }
+    .sub_legend{
+        .sub_legend_ {
+            width: 90%;
+            max-width: 900px;
+
+        }
+    }
+    .what_we_do{
+        .core{
+            margin-left: 3.5em;
+        }
+        .big_icons{
+            max-width: 900px;
+            margin: auto;
+            width: 90%;
+        }
+    }
+    .write_up{
+
+        .front_article{
+            max-width: 900px;
+            width: 90%;
+
+        }
+       
+    }
+    .big_button {
+        width: 90%;
+    }
+    footer {
+        .footer-container {
+            max-width: 900px;
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .big_button {
+        flex-direction: column;
+        transform: translate(-3%, 50%);
+        .p_special{
+            display: none;
+        }
+        a{
+            width: 100%;
+            .big_butt{
+                margin: auto;
+                border-bottom: 1px solid #e8e8e8;
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 1000px){
+    .logo{
+        a:nth-child(2){
+            display: none;
+        }
+    }
+    
+}
+@media screen and (max-width: 850px) {
+    .testimonial {
+        h1{
+            margin: 0;
+            &:nth-child(1){
+                margin: 2em 0;
+            }
+        }
+        .first-layer {
+            flex-direction: column;
+            border-bottom: 2px solid white;
+
+            .test-img {
+                width: 60%;
+                margin: auto;
+                
+            }
+            .none {
+                display: none;
+            }
+            .block {
+                display: block;
+            }
+            .test-write-up {
+                p:first-child {
+                    text-align: center;
+                }
+
+                width: 100%;
+
+                h1 {
+                    text-align: center;
+                }
+
+                p {
+                    padding: 2em;
+                }
+
+                .button-black {
+                    align-self: center;
+                }
+            }
+        }
+    }
+
+    .test-write-up:first-child {
+        align-items: center;
+        text-align: left;
+    }
+    #flexmenu {
+        justify-content: center;
+    }
+    .logo {
+        display: none;
+    }
+    .legend #anim {
+        transform: translateY(50%);
+    }
+    .top_header {
+        display: none;
+    }
+    .legend {
+        .legend_content {
+            display: none;
+        }
+    }
+    .write_up {
+        .front_article {
+            text-align: center;
+
+        }
+    }
+    .sub_legend{
+        background-image: linear-gradient(to right, #000, #000);
+        .sub_legend_ {
+            .manifesto {
+                width: 100%;
+                text-align: center;
+                font-size: 1.3em;
+            }
+
+            .about_us,
+            .ikpangi_group {
+                display: none;
+            }
+        }
+    }
+    .what_we_do {
+        height: auto;
+        .core {
+            margin-left: 3.5em;
+            width: 100%;
+            background-color: #fff;
+            color: rgb(66, 66, 66);
+            font-size: 1.7em;
+            height: auto;
+            margin-left: 0;
+        }
+    }
+    .big_icons {
+        flex-direction: column;
+        .environ,.empowerment,.security{
+            width: 100%;
+            margin-bottom: 1em;
+        }
+    }
+    .side-bar_contact {
+        width: 100%;
+        height: 100%;
+        left: -100%;
+    }
+
+    .side-bar_contact .toggle {
+        top: 50%;
+        transform: translateY(-50%);
+        transition: .5s;
+    }
+
+    .side-bar_contact.active .toggle {
+        top: 0;
+        right: 0;
+        transform: translateY(0);
+    }
+
+    .scroll {
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    footer {
+        width: 100%;
+
+        .footer-container {
+            .container:nth-child(3) {
+                width: 90%;
+                margin: auto;
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .legend #anim {
+        width: 100%;
+    }
+    .testimonial{
+
+        .first-layer {
+
+            .test-img {
+                min-width: 80%;
+               
+            }
+        } 
+
+    }
+    footer {
+        width: 100%;
+
+        .footer-container {
+
+            height: auto;
+
+            .container:nth-child(1) {
+                .blog-head {
+                    width: 100%;
+                }
+            }
+
+            .container:nth-child(2) {
+                height: 300px;
+                line-height: 30px;
+                width: 100%;
+
+                .sub-content {
+                    display: block;
+                    text-align: center;
+
+                }
+            }
+
+            .container:nth-child(3) {
+                height: 100px;
+                display: block;
+
+                .sub-small:nth-child(1) {
+                    width: 100%;
+
+                    .copyright {
+                        text-align: center;
+                        width: 100%;
+                        margin: auto;
+                    }
+
+                }
+
+                .sub-small:nth-child(2) {
+                    margin: auto;
+
+                    .icon-list {
+                        justify-content: center;
+
+                        li {
+                            padding: 0em .5em;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgba(0, 0, 0, .9);
+    color: white;
+    font-family: sans-serif;
+
+}
+.link{
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+    :hover{
+        color: crimson;
+        
+    }
+}
+//THE LOGO
+.showcase::after{
+    content: '';
+    height: 100vh;
+    width: 100%;
+    background-image: url(../image/industrial-720710.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    filter: blur(3px);
+    transition: all 1s;
+}
+.showcase:hover::after{
+    filter: blur(0px);
+}
+.showcase:hover .showcase-content{
+    filter: blur(2px);
+}
+.showcase-content{
+        position: absolute;
+        z-index: 1;
+        top: 30%;
+        left: 50%;
+        text-align: center;
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s;
+        transform: translateX(-50%);
+    .title{
+        font-size: 2.2rem;
+        margin-top: 1rem;
+    }
+    .text{
+        line-height: 1.7;
+        margin-top: 1rem;
+    }
+}
+//SERVICES
+.container{
+    max-width: 960px;
+    overflow: hidden;
+    margin: auto;
+    padding: 4rem 1rem;
+}
+.container.grid-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+//ABOUT US
+.center{
+    text-align: center;
+    margin: auto;
+}
+.bg-light{
+    background: #f4f4f4;
+    color: #333;
+    .link{
+        color: #000;
+    }
+}
+.bg-dark{
+    background: #333;
+    color: #f4f4f4;
+}
+.container{
+    .grid-2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+}
+.container-content{
+    i.fa.fa-laptop.fa-5x {
+        width: 100%;
+        text-align: center;
+        text-align: -webkit-center;
+    }
+}
+//Privacy Policy
+//Accordian
+.accordian-container{
+    width: 90%;
+    max-width: 500px;
+    margin: 10px auto;
+    button.accordian{
+        width: 100%;
+        background-color: black;
+        color: white;
+        border: none;
+        outline: none;
+        text-align: left;
+        padding: 15px 20px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-color .2s linear;
+    }
+    .accordian-content{
+        padding: 0 20px;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-Height .2s ease-in-out;
+        .accordian-text{
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            padding: 2em 0;
+        }
+    }
+}
+button.accordian:hover,  button.accordian.is-open{
+    background-color: rgb(88, 86, 86);
+}
+
+
+
+
+
+//FOOTER
+footer{
+    padding: 1.5rem;
+}
+
+//MEDIA QUERY
+@media screen and (max-width: 560px){
+    .showcase::after{
+        height: 50vh;
+    }
+    .showcase-content{
+        top: 10%;
+        margin-top: 3px;
+        height: 50vh;
+        .logo-image{
+            height: 150px;
+            width: 150px;
+        }
+        .text{
+            display: none;
+        }
+    }
+    .container.grid-3{
+        grid-template-columns: 1fr;
+    }
+    .container{
+        .grid-2{
+            grid-template-columns: 1fr;
+        }
+    }
+    .services div{
+        border-bottom: #333 dashed 1px;
+        padding: 1.2rem 1rem;
+    }
+    
+}
+@media screen and (max-height: 500px){
+    .showcase-content .title, .showcase-content .text{
+        display: none;
+    }
+    
+}
